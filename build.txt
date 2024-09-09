@@ -1,0 +1,17 @@
+rm -rf .repo/local_manifests
+
+# REPO INIT
+repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
+git clone https://github.com/786-shaaim --depth 1 -b Everest .repo/local_manifests
+
+# Crave resync
+/opt/crave/resync.sh
+
+# Environment setup
+source build/envsetup.sh
+
+# Lunch command
+lunch lineage_mi439-userdebug
+
+# Make build (start)
+mka everest
