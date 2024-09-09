@@ -2,7 +2,7 @@ rm -rf .repo/local_manifests
 
 # REPO INIT
 repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
-git clone https://github.com/786-shaaim --depth 1 -b Everest .repo/local_manifests
+git clone https://github.com/786-shaaim/local_manifests --depth 1 -b Everest .repo/local_manifests
 
 # Crave resync
 /opt/crave/resync.sh
