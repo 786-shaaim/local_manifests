@@ -11,7 +11,7 @@ git clone https://github.com/786-shaaim/local_manifests --depth 1 -b Everest .re
 source build/envsetup.sh
 
 # Lunch command
-lunch lineage_mi439-userdebug
+lunch lineage_mi439-ap2a-userdebug
 
 # Make build (start)
 mka everest
